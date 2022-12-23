@@ -45,8 +45,11 @@ int main( )
 	}
 	//LOOP 1
 	//FIRST COORDINATE GETS PUTED THEN 
-	//x WILL GET INCREAMENTED WITH dx valus
-	//y 
- 	getch();
+	//x WILL GET INCREAMENTED WITH dx values
+	//y WILL GET INCREAMENTED WITH dy values
+	//but the x and y increament depends on slop her in program on the values of the dx and dy
+	// if dx is grater than or equal to then x become constant and y increases and wise versa when the dy is geater than the dx
+ 	
+	getch();
 	closegraph();
 }
