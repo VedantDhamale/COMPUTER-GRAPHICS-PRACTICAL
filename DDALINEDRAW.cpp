@@ -42,8 +42,11 @@ int main( )
 		x=x+dx;
 		y=y+dy;
 		i=i+1;
-
 	}
+	//LOOP 1
+	//FIRST COORDINATE GETS PUTED THEN 
+	//x WILL GET INCREAMENTED WITH dx valus
+	//y 
  	getch();
 	closegraph();
 }
