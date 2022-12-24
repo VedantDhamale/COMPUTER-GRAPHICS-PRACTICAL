@@ -7,14 +7,14 @@ void drawline(int x0, int y0, int x1, int y1)
 {
     int dx, dy, p, x, y;
  
-	dx=x1-x0;//8-1=7
-	dy=y1-y0;//5-1=4
+	dx=x1-x0;
+	dy=y1-y0;
  
-	x=x0;//1
-	y=y0;//1
+	x=x0;
+	y=y0;
  
 	//calulating the decision parameter (p)
-	p=2*dy-dx;//-6
+	p=2*dy-dx;
  	
 	while(x<x1)
 	{
@@ -22,6 +22,7 @@ void drawline(int x0, int y0, int x1, int y1)
 		if(p>=0)
 		{
 			putpixel(x,y,7);
+			//cout<<x<<y<<"\n";
 			y=y+1;
 			p=p+2*dy-2*dx;
 		}
@@ -29,6 +30,7 @@ void drawline(int x0, int y0, int x1, int y1)
 		else
 		{
 			putpixel(x,y,7);
+			//cout<<x<<y<<"\n";
 			p=p+2*dy;
 		}
 		x=x+1;
@@ -41,14 +43,12 @@ int main()
 	int gd=DETECT, gm, error, x0, y0, x1, y1;
 	initgraph(&gd, &gm, NULL);
  	
-	//accept the coordinates
 	cout<<"Enter co-ordinates of first point: ";
-	cin>>x0>>y0;//1,1
+	cin>>x0>>y0;
  
 	cout<<"Enter co-ordinates of second point: ";
-	cin>>x1>>y1;//8,5
+	cin>>x1>>y1;
 	
-	//calling funtion and passing the parameters
 	drawline(x0, y0, x1, y1);
  
 	getch();
