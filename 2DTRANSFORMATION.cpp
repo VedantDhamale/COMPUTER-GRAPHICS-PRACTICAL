@@ -6,17 +6,14 @@ using namespace std;
 
 int main()
 {
-	
-	int gd=DETECT,gm,ch,tx,ty,theta,sx,sy;
+	int gd=DETECT,gm,ch,tx,ty,theta,sx,sy,x1,y1,x2,y2;
 	initgraph(&gd,&gm,NULL);
-	int x1,y1,x2,y2;
 	long xn,yn;
 	double a;
 	x1=100,y1=100,x2=200,y2=200;
-	
 	do
 	{
-		cout<<"Transformation Are\n"<<"\n 1.Translation"<<"\n 2.Rotation"<<"\n 3.Scaling"<<"\n 4.Exit"<<endl;
+		cout<<"Transformation Are\n"<<"\n 1.Translation"<<"\n 2.Rotation"<<"\n 3.Scaling"<<endl;
 		cout<<"Enter your choice"<<endl;
 		cin>>ch;
 		switch(ch)
@@ -48,10 +45,6 @@ int main()
 				rectangle(x1*sx,y1*sy,x2*sx,y2*sy);
 				break;
 			
-			case 4:
-				cout<<"Exting program ...";
-				break;
-			
 			default:
 				cout<<"wrong choice"<<endl;
 				break;
@@ -63,3 +56,5 @@ int main()
 	getch();
 	closegraph();
 }
+
+
